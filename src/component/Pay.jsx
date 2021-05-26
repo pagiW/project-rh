@@ -5,7 +5,7 @@ import {addOrder} from '../actions';
 
 const Pay = ({cart, buyer, addOrder, history}) => {
     const paypalOptions = {
-        clientId: process.env.appId,
+        clientId: process.env.APPID,
         intent: 'capture',
         currency: 'USD'
     }
